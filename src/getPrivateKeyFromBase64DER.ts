@@ -1,5 +1,4 @@
 import { asn1, pkcs12, pki, util } from "node-forge";
-import rsa from "node-forge/lib/rsa";
 
 export function getPrivateKeyFromBase64DER(base64der: string) {
   const der = util.decode64(base64der);
