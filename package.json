@@ -1,6 +1,7 @@
 {
   "name": "simple-der",
-  "version": "0.0.6",
+  "version": "0.0.8",
+  "type": "module" ,
   "description": "Use typescript to manage DER format from node",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
