@@ -1,13 +1,21 @@
 {
   "name": "simple-der",
-  "version": "0.0.0",
-  "description": "Manage DER format from node",
+  "version": "0.0.2",
+  "description": "Use typescript to manage DER format from node",
   "main": "index.js",
+  "files": [
+    "dist"
+  ],
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "preversion": "npm run build",
+    "postversion": "git push --follow-tags",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,7 +23,8 @@
   },
   "keywords": [
     "node",
-    "DER"
+    "DER",
+    "TypeScript"
   ],
   "author": "Sebastian Rogers",
   "license": "SEE LICENSE IN LICENSE",
@@ -25,7 +34,9 @@
   "homepage": "https://github.com/Simple-Innovation/node-der#readme",
   "devDependencies": {
     "@types/jest": "^27.4.1",
+    "@types/node-forge": "^1.0.1",
     "jest": "^27.5.1",
+    "rimraf": "^3.0.2",
     "ts-jest": "^27.1.3",
     "typescript": "^4.6.2"
   },
