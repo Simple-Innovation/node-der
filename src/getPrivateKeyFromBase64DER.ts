@@ -1,4 +1,5 @@
-// import { asn1, pkcs12, pki, util } from "node-forge";
+// node-forge appears to still be a CommonJS module which causes issues when used from a calling ESM Module
+// This syntax resolves them
 import pkg from "node-forge";
 const { asn1, pki, util } = pkg;
 
