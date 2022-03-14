@@ -1,6 +1,6 @@
 # simple-der
 
-Node module to manage DER format certificates
+Use typescript to manage DER format from node
 
 # Build
 

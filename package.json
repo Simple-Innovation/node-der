@@ -1,8 +1,9 @@
 {
   "name": "simple-der",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Use typescript to manage DER format from node",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
